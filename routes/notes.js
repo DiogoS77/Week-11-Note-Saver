@@ -31,4 +31,16 @@ notesRouter.get('/:note_id', async (req, res) => {
   }
 });
 
-
+notesRouter.delete('/:note_id', async (req, res) => {
+    try {
+      const noteId = req.params.note_id;
+      const data = await readFromFile('./db/db.json');
+      const json = JSON.parse(data);
+      const result = json.filter((note) => note.id !== noteId);
+      await writeToFile('./db/db.json', result);
+      res.json(`Item ${noteId} got deleted`);
+    } catch (error) {
+      console.error(error);
+      res.status(500).send('Server Error');
+    }
+  });
