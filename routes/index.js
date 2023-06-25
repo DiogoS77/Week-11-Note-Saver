@@ -1,4 +1,4 @@
-const express = reqiore('express');
+const express = require('express');
 
 const notesRouter = require('./notes.js');
 
