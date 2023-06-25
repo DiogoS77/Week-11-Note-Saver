@@ -21,7 +21,7 @@ notesRouter.get('/:note_id', async (req, res) => {
     const noteId = req.params.note_id;
     const data = await readFromFile('./db/db.json');
     const json = JSON.parse(data);
-    const result = json.filter((note) => note.tip_id === tipID);
+    const result = json.filter((note) => note.note_id === noteId);
     result.length > 0
       ? res.json(result)
       : res.json('No note with for that ID');

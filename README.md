@@ -46,7 +46,6 @@ This challenge helped me in a lot because i was not to confident in using heroku
 - [Usage](#usage)
 - [Tests](#tests)
 - [License](#license)
-- [Credits](#credits)
 - [Questions](#questions)
 
 ## Installation
@@ -90,10 +89,6 @@ Tested deploying it to heroku without any error appearing.
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This project is licensed under the MIT license.
-
-## Credits
-
-Credits to 28 Mini Project for providing code for middleware and helpers.
 
 ## Questions
 
