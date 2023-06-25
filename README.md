@@ -36,6 +36,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 - [Usage](#usage)
 - [Tests](#tests)
 - [License](#license)
+- [Credits](#credits)
 - [Questions](#questions)
 
 ## Installation
@@ -48,7 +49,13 @@ npm i uuid
 
 ## Usage
 
+![Terminal](./images/terminal.jpg)
 
+![Heroku Terminal](./images/heroku.jpg)
+
+
+
+Deployed Application: https://note-saver-bootcamp-509a52eaee32.herokuapp.com/ 
 
 ## Tests
 
@@ -62,6 +69,10 @@ I will be listing the tests i have done.
 ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This project is licensed under the MIT license.
+
+## Credits
+
+Credits to 28 Mini Project for providing code for middleware and helpers.
 
 ## Questions
 
