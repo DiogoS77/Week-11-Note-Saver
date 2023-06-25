@@ -70,3 +70,18 @@ notesRouter.post('/', async (req, res) => {
 });
 
 module.exports = notesRouter;
+
+//This code sets up an Express router for handling note-related routes. It exports the router for use in other files.
+
+//The express and Router modules are imported from express.
+//The v4 method from the uuid module is imported as uuidv4.
+//Several functions for file reading and writing are imported from the ../helpers/fsUtils module.
+//A new instance of the router is created using Router().
+//The router handles the following routes:
+//GET /: Retrieves all notes from the db.json file and sends the data as a JSON response.
+//GET /:note_id: Retrieves a specific note based on the provided note_id parameter, filters the notes based on the ID, and sends the result as a JSON response.
+//DELETE /:note_id: Deletes a specific note based on the provided note_id parameter, filters the notes based on the ID, writes the updated data to the db.json file, and sends a JSON response indicating the deleted item.
+//POST /: Creates a new note based on the request body containing title and text, generates a unique ID using uuidv4, appends the new note to the db.json file, and sends a JSON response indicating the successful addition of the note.
+//Error handling is included using try-catch blocks. Any errors encountered during the execution of the route handlers will be caught, logged, and a 500 Server Error response will be sent.
+//The router is exported for use in other files.
+//In summary, this code defines a router that handles various CRUD operations for notes, including retrieving all notes, retrieving a specific note, deleting a note, and creating a new note.
